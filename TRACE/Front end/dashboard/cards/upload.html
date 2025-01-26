@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title> upload </title>
+        <link rel="stylesheet" href="upload-style.css">
+        <script src="https://kit.fontawesome.com/2b98f88911.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#" class="logo">
+                        <img src="logo.png" alt="">
+                        <span class="nav-item">Trace</span>
+                    </a></li>
+                    <li><a href="#">
+                        <i class="fa-solid fa-upload"></i>
+                        <span class="nav-item">Upload</span>
+                    </a></li>
+                    <li><a href="../dash-home.php" class="back">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <span class="nav-item">back</span>
+                    </a></li>
+                </ul>
+            </nav>
+            <section class="main">
+                <form action="../../../Back end/file_upload.php" method="post" enctype="multipart/form-data">
+                <div class="main-menus">
+                    <label for="upload-box" class="menu">Certificate: </label>
+                    <div class="upload-box">
+                        <input type="file" accept="application" id="pdf" name="file"/>
+                        <label for="pdf" class="pdf-box">Upload file</label>
+                    </div>
+                    <div class="menu">
+                        <input type="text" id="act-head">
+                        <label for="act-head">Activity head: </label>
+                        <select name="avhead" id="act-head-drop" class="drop-down">
+                            <option value="" selected disabled>choose a category</option>
+                            <option value="National Initiatives Participation">National Initiatives Participation</option>
+                            <option value="Sports & Games Participation">Sports & Games Participation</option>
+                            <option value="Cultural Activities Participation">Cultural Activities Participation</option>
+                            <option value="Professional Self Initiatives">Professional Self Initiatives</option>
+                            <option value="Entrepreneurship and Innovation">Entrepreneurship and Innovation</option>
+                            <option value="Leadership & Management">Leadership & Management</option>
+                        </select>
+                    </div>
+                    <div class="menu">
+                        <input type="text" id="activity">
+                        <label for="activity">Activity: </label>
+                        <select name="av" id="activity-drop" class="drop-down">
+                            <option value="" selected disabled>choose a category</option>
+                            <option value="NCC">NCC</option>
+                            <option value="NSS">NSS</option>
+                            <option value="Sports">Sports</option>
+                            <option value="Games -Consolation">Games -Consolation</option>
+                            <option value="Games -First prize">Games -First prize</option>
+                            <option value="Games -Second prize">Games -Second prize</option>
+                            <option value="Games -Third prize">Games -Third prize</option>
+                            <option value="Music">Music</option>
+                            <option value="Performing arts">Performing arts</option>
+                            <option value="Literary arts -Consolation">Literary arts -Consolation</option>
+                            <option value="Literary arts -First prize">Literary arts -First prize</option>
+                            <option value="Literary arts -Second prize">Literary arts -Second prize</option>
+                            <option value="Literary arts -Third prize">Literary arts -Third prize</option>
+                            <option value="Tech Fest, Tech Quiz">Tech Fest, Tech Quiz</option>
+                            <option value="MOOC">MOOC</option>
+                            <option value="IEEE, IET, ASME, SAE, NASA">IEEE, IET, ASME, SAE, NASA</option>
+                            <option value="Conference/ Seminars/ Exhibitions/ Workshop/ STTPconducted at IITs/NITs">Conference/ Seminars/ Exhibitions/ Workshop/ STTPconducted at IITs/NITs</option>
+                            <option value="Paper presentation/ publication at IITs/ NITs">Paper presentation/ publication at IITs/ NITs</option>
+                            <option value="Poster Presentation at IITs /NITs">Poster Presentation at IITs /NITs</option>
+                            <option value="Industrial Training/ Internship (atleast for 5 full days)">Industrial Training/ Internship (atleast for 5 full days)</option>
+                            <option value="Industrial/ Exhibition visits">Industrial/ Exhibition visits</option>
+                            <option value="Foreign Language Skill">Foreign Language Skill (TOFEL/ IELTS/BEC exams etc.)</option>
+                            <option value="Start-up Company Registered legally">Start-up Company Registered legally</option>
+                            <option value="Patent-Filed">Patent-Filed</option>
+                            <option value="Patent - Published">Patent - Published</option>
+                            <option value="Patent- Approved">Patent- Approved</option>
+                            <option value="Patent- Licensed">Patent- Licensed</option>
+                            <option value="Prototype developed and tested">Prototype developed and tested</option>
+                            <option value="Awards for Products developed">Awards for Products developed</option>
+                            <option value="Innovative technologies developed and used by industries/users">Innovative technologies developed and used by industries/users</option>
+                            <option value="Got venture capital funding for innovative ideas/products">Got venture capital funding for innovative ideas/products</option>
+                            <option value="Startup Employment">Startup Employment</option>
+                            <option value="Societal innovations">Societal innovations</option>
+                            <option value="Student Professional Societies">Student Professional Societies (IEEE,IET, ASME, SAE, NASA etc)</option>
+                            <option value="College Association Chapters">College Association Chapters (Mechanical, Civil, Electrical etc)</option>
+                            <option value="Festival & Technical Events">Festival & Technical Events</option>
+                            <option value="Hobby Clubs">Hobby Clubs</option>
+                            <option value="Special Initiatives">Special Initiatives</option>
+                            <option value="Elected student representatives">Elected student representatives</option>
+                        </select>
+                    </div>
+                    <div class="menu">
+                        <input type="text" id="loa">
+                        <label for="loa">Level of achievement: </label>
+                        <select name="loa" id="loa-drop" class="drop-down">
+                            <option value="" selected disabled>choose a category</option>
+                            <option value="0">NIL</option>
+                            <option value="1">I</option>
+                            <option value="2">II</option>
+                            <option value="3">III</option>
+                            <option value="4">IV</option>
+                            <option value="5">V</option>
+                        </select>
+                    </div>
+                    <div class="menu">
+                        <div class="submit">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+                <section class="note">
+                    <a href="ACTIVITYPOINTS.pdf">click here for more info.</a>
+                </section>
+            </section>
+		</div>
+    </body>
+    <script src="upload.js"></script>
+</html>
